@@ -24,9 +24,14 @@ end
 
 
 def printer(attendees)
-  assignment_array = []
-  attendees.each do |attendee|
-    assignment = 
-    
+  batch_badge_creator(attendees).each do |attendee|
+    puts attendee 
   end
+  assign_rooms(attendees).each do |attendees|
+    puts attendees
+  end 
 end
+
+
+
+
