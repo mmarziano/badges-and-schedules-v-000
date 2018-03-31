@@ -28,5 +28,6 @@ def printer(name)
   name.each do |name|
     batch_badge_creator(name[i])
     assign_rooms(name[i])
+    i =+ 1
   end
 end
