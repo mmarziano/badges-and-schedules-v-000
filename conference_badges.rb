@@ -23,7 +23,10 @@ def assign_rooms(name)
 end
 
 
-def printer
-  batch_badge_creator(name)
-  assign_rooms(name)
+def printer(name)
+  i = 0
+  name.each do |name|
+    batch_badge_creator(name[i])
+    assign_rooms(name[i])
+  end
 end
