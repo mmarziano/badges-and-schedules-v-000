@@ -16,6 +16,6 @@ end
 def assign_rooms(name)
   name.each_with_index do |name,i|
     room_number = i + 1 
-    puts "Hello, #{name}! You'll be assigned to room #{room_number}!"
+    return "Hello, #{name}! You'll be assigned to room #{room_number}!"
   end 
 end 
