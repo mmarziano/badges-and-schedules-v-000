@@ -24,10 +24,8 @@ end
 
 
 def printer(name)
-  i = 0
   name.each do |name|
     batch_badge_creator(name)
     puts assign_rooms(name)
-    i =+ 1
   end
 end
